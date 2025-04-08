@@ -108,4 +108,4 @@ github-profile-analyzer-project/
 
 **Ubaid Pathan**  
 📧 [LinkedIn](https://www.linkedin.com/in/ubed-pathan-35a715242/)  
-🌐 [Portfolio](https://ubedsportfolio.vercel.app/))
+🌐 [Portfolio](https://ubedsportfolio.vercel.app/)

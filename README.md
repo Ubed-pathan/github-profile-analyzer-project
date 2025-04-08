@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# GitHub Profile Analyzer 🔍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that takes a GitHub username as input and shows their public activity metrics:
 
-Currently, two official plugins are available:
+- ✅ List of public repositories  
+- 📊 (Advanced) Daily commits chart *(optional if implemented)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 [https://github-profile-analyzer-project.vercel.app](https://github-profile-analyzer-project.vercel.app)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React (with Vite)  
+- **UI Components**: ShadCN (Radix UI + TailwindCSS)  
+- **Language**: TypeScript  
+- **API**: GitHub Public REST API v3  
+
+---
+
+## 📦 Getting Started (Development)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ubed-pathan/github-profile-analyzer-project.git
+cd github-profile-analyzer-project
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## ⚙️ Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🌐 Deploy Instructions
+
+You can easily deploy this project using **Vercel**:
+
+1. Go to [vercel.com](https://vercel.com) and log in using your GitHub account.
+2. Click **"Add New Project"** and select the repository.
+3. Use default build settings (Vite + React + TypeScript).
+4. Click **Deploy**.
+5. Once deployed, your live URL will be available (like: `https://your-app.vercel.app`).
+
+✅ You can also deploy manually by uploading the code via **Vercel CLI**.
+
+---
+
+## 📁 Folder Structure
+
+```
+github-profile-analyzer-project/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # UI and reusable components
+│   ├── pages/           # Application pages
+│   ├── services/        # GitHub API handling
+│   ├── App.tsx
+│   ├── main.tsx
+├── tailwind.config.ts   # Tailwind + ShadCN configuration
+├── tsconfig.json        # TypeScript config
+├── vite.config.ts       # Vite config
+└── package.json         # Scripts and dependencies
+```
+
+---
+
+## 📝 Features
+
+- 🔎 Search GitHub users by username  
+- 📃 Display all public repositories  
+- 📈 (Optional) Commit activity chart  
+- 💡 Modern and minimal UI built with ShadCN components  
+
+---
+
+## ⚠️ Notes
+
+- GitHub API is rate-limited to **60 requests/hour** without authentication.  
+- For extensive usage, a GitHub token can be added in future updates.  
+- The chart feature may require GitHub GraphQL or third-party charting APIs for deeper analytics.
+
+---
+
+## ✨ Author
+
+**Ubaid Pathan**  
+📧 [LinkedIn](https://www.linkedin.com/in/ubaid-pathan)  
+🌐 [Portfolio](https://your-portfolio-link.com)

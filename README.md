@@ -22,6 +22,12 @@ A modern web application that takes a GitHub username as input and shows their p
 
 ---
 
+## 🔗 Demo Video
+
+https://github.com/user-attachments/assets/1d44bcc3-866c-459b-a6b1-96ee1b19eb8e
+
+
+
 ## 📦 Getting Started (Development)
 
 ### 1. Clone the repository

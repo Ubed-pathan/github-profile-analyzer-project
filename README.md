@@ -3,7 +3,7 @@
 A modern web application that takes a GitHub username as input and shows their public activity metrics:
 
 - ✅ List of public repositories  
-- 📊 (Advanced) Daily commits chart *(optional if implemented)*
+- 📊 (Advanced) Daily commits chart
 
 ---
 
@@ -91,7 +91,7 @@ github-profile-analyzer-project/
 
 - 🔎 Search GitHub users by username  
 - 📃 Display all public repositories  
-- 📈 (Optional) Commit activity chart  
+- 📈 Commit activity chart  
 - 💡 Modern and minimal UI built with ShadCN components  
 
 ---
@@ -107,5 +107,5 @@ github-profile-analyzer-project/
 ## ✨ Author
 
 **Ubaid Pathan**  
-📧 [LinkedIn](https://www.linkedin.com/in/ubaid-pathan)  
-🌐 [Portfolio](https://your-portfolio-link.com)
+📧 [LinkedIn](https://www.linkedin.com/in/ubed-pathan-35a715242/)  
+🌐 [Portfolio](https://ubedsportfolio.vercel.app/))
